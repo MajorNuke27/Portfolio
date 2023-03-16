@@ -1,0 +1,25 @@
+.section {
+    padding: 0 80px;
+}
+
+.title {
+    font-size: 5.4rem;
+    color: var(--primary-color);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+.bt {
+    border: 3px solid var(--secondary-color);
+    width: fit-content;
+    font-size: 1.6rem;
+    padding: 18px;
+    color: var(--secondary-color);
+    border-radius: 7px;
+    position: relative;
+}
