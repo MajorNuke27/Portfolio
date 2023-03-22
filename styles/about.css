@@ -1,0 +1,25 @@
+.about-intro {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 80px;
+}
+
+.about-content {
+    margin-left: 5.5%;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-intro {
+        row-gap: 20px;
+    }
+
+    .about-intro .title {
+        margin-top: 20px;
+    }
+
+    .about-content {
+        margin-left: 0;
+    }
+}
