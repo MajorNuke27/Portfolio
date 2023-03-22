@@ -7,9 +7,11 @@ window.onscroll = () => {
 
     if(prevYPos < currentYPos) {
         navMenu.ariaHidden = "true"
+        navMenu.classList.replace('show-nav', 'hide-nav')
     }
     else {
         navMenu.ariaHidden = "false"
+        navMenu.classList.replace('hide-nav', 'show-nav')
     }
 
     prevYPos = currentYPos;
