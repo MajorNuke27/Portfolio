@@ -7,6 +7,9 @@
     grid-template-columns: 1fr .5fr;
     grid-template-rows: 1fr .3fr .5fr;
     min-height: calc(100vh - 90px);
+    margin-top: 90px;
+    gap: 20px;
+    scroll-margin-top: 90px;
 }
 
 .content {
@@ -48,11 +51,14 @@
 
 .bt-resume {
     border: none;
-    color: var(--primary-color);
+    color: var(--aqua);
+    text-align: center;
+    isolation: isolate;
+    z-index: -1;
 }
 
 .bt-resume::after, .bt-resume::before{
-    border: 3px solid var(--primary-color);
+    border: 3px solid var(--aqua);
     border-radius: 7px;
     content: "";
     position: absolute;
@@ -73,7 +79,7 @@
 }
 
 .links img {
-    width: 70px;
+    min-width: 60px;
 }
 
 .links a {
@@ -94,4 +100,43 @@
 
 .next:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .landing {
+        grid-template-areas: 
+        'image'
+        'content'
+        'footer'
+        'down';
+        grid-template-columns: none;
+        grid-template-rows: none;
+        margin-top: 70px;
+        gap: 30px;
+        height: calc(100vh - 70px);
+        scroll-margin-top: 70px;
+    }
+
+    .introduction {
+        margin-left: 0;
+    }
+
+    .selfie {
+        width: 45%;
+        min-width: auto;
+    }
+
+    .links {
+        margin-left: 0;
+        column-gap: 35px;
+        place-self: center;
+    }
+
+    .links img {
+        min-width: 45px;
+    }
+
+    .next img {
+        width: 65px;
+    }
 }
