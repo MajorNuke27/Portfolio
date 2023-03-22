@@ -6,7 +6,7 @@
         'down down';
     grid-template-columns: 1fr .5fr;
     grid-template-rows: 1fr .3fr .5fr;
-    min-height: calc(100vh - 90px);
+    height: calc(100vh - 90px);
     margin-top: 90px;
     gap: 20px;
     scroll-margin-top: 90px;
@@ -17,6 +17,7 @@
     max-width: 1000px;
     align-self: center;
     grid-area: content;
+    margin-top: 30px;
 }
 
 .content h1 {
@@ -53,8 +54,6 @@
     border: none;
     color: var(--aqua);
     text-align: center;
-    isolation: isolate;
-    z-index: -1;
 }
 
 .bt-resume::after, .bt-resume::before{
@@ -79,7 +78,7 @@
 }
 
 .links img {
-    min-width: 60px;
+    width: 60px;
 }
 
 .links a {
@@ -102,6 +101,52 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 1366px) {
+    .selfie {
+        width: 63%;
+    }
+
+    .links img {
+        width: 50px;
+    }
+
+    .next img {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .landing {
+        grid-template-areas: 
+        'content image'
+        'footer footer'
+        'down down';
+        height: calc(100svh - 70px);
+        margin-top: 70px;
+    }
+
+    .introduction {
+        margin-left: 0;
+    }
+
+    .links {
+        justify-self: center;
+        margin-left: 0;
+    }
+
+    .selfie {
+        min-width: 150px;
+    }
+
+    .links img {
+        width: 45px;
+    }
+
+    .next img {
+        width: 60px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .landing {
         grid-template-areas: 
@@ -111,32 +156,31 @@
         'down';
         grid-template-columns: none;
         grid-template-rows: none;
-        margin-top: 70px;
-        gap: 30px;
-        height: calc(100vh - 70px);
+        gap: 0;
         scroll-margin-top: 70px;
+    }
+
+    .content {
+        margin-top: 0;
+        margin-bottom: 2%;
+    }
+
+    .content h1 {
+        margin-bottom: 2%;
     }
 
     .introduction {
         margin-left: 0;
+        margin-bottom: 2%;
     }
 
     .selfie {
         width: 45%;
-        min-width: auto;
+        max-width: 100px;
     }
 
     .links {
-        margin-left: 0;
-        column-gap: 35px;
+        column-gap: 4%;
         place-self: center;
-    }
-
-    .links img {
-        min-width: 45px;
-    }
-
-    .next img {
-        width: 65px;
     }
 }

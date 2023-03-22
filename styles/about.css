@@ -1,5 +1,5 @@
 .about-intro {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,13 +10,21 @@
     margin-left: 5.5%;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width:800px) {
     .about-intro {
-        row-gap: 20px;
+        height: 100dvh;
+        row-gap: 3rem;
     }
 
-    .about-intro .title {
-        margin-top: 20px;
+    .about-content {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 00px) {
+    .about-intro {
+        height: 100dvh;
+        row-gap: 3rem;
     }
 
     .about-content {

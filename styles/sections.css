@@ -2,14 +2,21 @@
     padding: 0 5%;
 }
 
-.title {
-    font-size: 5.4rem;
+h1 {
+    font-size: 6rem;
     color: var(--aqua);
     font-style: italic;
     font-weight: bold;
 }
 
-.text {
+h2 {
+    font-size: 4.5rem;
+    color: var(--aqua);
+    font-style: italic;
+    font-weight: bold;
+}
+
+p {
     font-size: 3rem;
     color: var(--white);
 }
@@ -24,13 +31,58 @@
     position: relative;
 }
 
+@media only screen and (max-width: 1366px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .bt {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    P {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .bt {
+        font-size: 1.2rem;
+        padding: .9em;
+    }
+}
+
 @media only screen and (max-width: 600px) {
-    .title {
+    h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    
+    h2 {
         font-size: 2.5rem;
         text-align: center;
     }
     
-    .text {
+    P {
         font-size: 1.5rem;
         text-align: center;
     }
