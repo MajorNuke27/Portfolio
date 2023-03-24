@@ -121,7 +121,8 @@
         'content image'
         'footer footer'
         'down down';
-        height: calc(100svh - 70px);
+        height: fit-content;
+        min-height: calc(100svh - 70px);
         margin-top: 70px;
     }
 
@@ -180,7 +181,7 @@
     }
 
     .links {
-        column-gap: 4%;
+        column-gap: 10%;
         place-self: center;
     }
 }

@@ -12,19 +12,9 @@
 
 @media screen and (max-width:800px) {
     .about-intro {
-        height: 100dvh;
-        row-gap: 3rem;
-    }
-
-    .about-content {
-        margin-left: 0;
-    }
-}
-
-@media only screen and (max-width: 00px) {
-    .about-intro {
-        height: 100dvh;
-        row-gap: 3rem;
+        height: fit-content;
+        min-height: 100dvh;
+        row-gap: 2rem;
     }
 
     .about-content {

@@ -138,16 +138,17 @@
     }
 
     .nav-bar-list {
-        flex-direction: column;
+        visibility: hidden;
         position: absolute;
+        flex-direction: column;
         right: 5%;
         top: calc(70px + 25%);
         height: 30vh;
         width: 30svw;
         min-width: 14rem;
         padding: 2rem 0;
-        transition: transform 0.5s ease;
         transform: translate(105px, -110px) scale(0);
+        transition: transform 0.5s ease;
     }
 
     .nav-bar-list::before {
@@ -168,6 +169,7 @@
     }
 
     .show-nav-menu {
+        visibility: visible;
         transform: translate(0,0) scale(1) !important;
     }
 }
