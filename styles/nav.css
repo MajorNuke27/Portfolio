@@ -138,15 +138,16 @@
     }
 
     .nav-bar-list {
-        visibility: hidden;
         position: absolute;
         flex-direction: column;
         right: 5%;
         top: calc(70px + 25%);
-        height: 30vh;
+        height: fit-content;
+        min-height: 30vh;
         width: 30svw;
         min-width: 14rem;
         padding: 2rem 0;
+        row-gap: 2rem;
         transform: translate(105px, -110px) scale(0);
         transition: transform 0.5s ease;
     }
@@ -154,9 +155,8 @@
     .nav-bar-list::before {
         content: '';
         position: absolute;
-        width: inherit;
-        min-width: inherit;
-        height: inherit;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
         top: -1px;
         left: -1px;
         background: rgba(255, 253, 247, 0.16);
@@ -169,7 +169,6 @@
     }
 
     .show-nav-menu {
-        visibility: visible;
         transform: translate(0,0) scale(1) !important;
     }
 }

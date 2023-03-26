@@ -1,5 +1,6 @@
 .section {
     padding: 0 5%;
+    height: fit-content;
 }
 
 h1 {

@@ -6,7 +6,7 @@
         'down down';
     grid-template-columns: 1fr .5fr;
     grid-template-rows: 1fr .3fr .5fr;
-    height: calc(100vh - 90px);
+    min-height: calc(100vh - 90px);
     margin-top: 90px;
     gap: 20px;
     scroll-margin-top: 90px;

@@ -13,6 +13,7 @@ window.onscroll = () => {
     if(prevYPos < currentYPos) {
         navMenu.ariaHidden = "true"
         navMenu.classList.replace('show-nav', 'hide-nav');
+        if(navList.classList.contains('show-nav-menu')) btToggleMenu.click();
     }
     else {
         navMenu.ariaHidden = "false"
@@ -36,9 +37,11 @@ window.onscroll = () => {
 mediaQuery.addEventListener('change', () => {
     if(mediaQuery.matches){
         navList.setAttribute('aria-hidden', !navList.classList.contains('show-nav-menu'));
+        btToggleMenu.setAttribute('aria-hidden', false);
     }
     else {
         navList.setAttribute('aria-hidden', false);
+        btToggleMenu.setAttribute('aria-hidden', true);
     }
 });
 
