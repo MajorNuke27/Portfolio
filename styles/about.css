@@ -10,6 +10,42 @@
     margin-left: 5.5%;
 }
 
+.techs-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.about-skills {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 80px;
+}
+
+.techs {
+    color: var(--white);
+    font-size: 2rem;
+    list-style-image: url("../assets/images/arrow-right.svg");
+    padding-left: 30px;
+}
+
+.techs li {
+    margin-top: 1rem;
+}
+
+
+.item-content {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.item-content img {
+    height: 3rem;
+}
+
 @media screen and (max-width:800px) {
     .about-intro {
         height: fit-content;
@@ -19,5 +55,15 @@
 
     .about-content {
         margin-left: 0;
+    }
+
+    .techs {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .techs {
+        font-size: 1.2rem;
     }
 }

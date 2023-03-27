@@ -59,6 +59,17 @@
     isolation: isolate;
 }
 
+.controls {
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+.bt-car {
+    position: relative !important;
+    display: inline !important;
+    transform: translateY(0) !important;
+}
+
 @media only screen and (max-width: 1366px) {
     .body {
         font-size: 1.5rem;
