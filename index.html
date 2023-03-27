@@ -43,7 +43,7 @@
             </div>
             <img class="selfie" src="./assets/images/me.jpeg" alt="selfie">
             <footer class="links">
-                <a href="resume" target="_blank" class="bt bt-resume">Take a look into my resume</a>
+                <a href="https://drive.google.com/file/d/1-9DmPte3j_cICIYVA19b-Zl7gvp98VD0/view?usp=sharing" target="_blank" class="bt bt-resume">Take a look into my resume</a>
                 <a target="_blank" href="https://github.com/MajorNuke27" aria-label="Link to GitHub"><img src="./assets/images/github.svg" alt="github-logo"></a>
             </footer>
             <a class="next" href="#about" aria-label="Go to next section"><img src="./assets/images/chevrons-down.svg" alt="arrow"></a>
@@ -59,10 +59,49 @@
             <h2>There are some of my projects</h2>
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <li class="glide__slide"><img style="width: fit-content;" src="./assets/images/background.jpg" alt="placeholder"></li>
-                        <li class="glide__slide"><img style="width: fit-content;" src="./assets/images/background.jpg" alt="placeholder"></li>
-                        <li class="glide__slide"><img style="width: fit-content;" src="./assets/images/background.jpg" alt="placeholder"></li>
+                    <ul class="glide__slides track">
+                        <li class="glide__slide">
+                            <section class="card">
+                                <div class="card-content">
+                                    <h3 class="card-title">Currency Exchanger</h3>
+                                    <p class="body">
+                                        Currency exchanger that uses an API to get updated exchange rates daily.
+                                    </p>
+                                    <footer class="buttons">
+                                        <a href="https://github.com/MajorNuke27/conversor_divisas" class="bt bt-resume">Github</a>
+                                        <a href="https://github.com/MajorNuke27/conversor_divisas/releases/tag/v1.1.0" class="bt bt-resume">Download app</a>
+                                    </footer>
+                                </div>
+                            </section>
+                        </li>
+                        <li class="glide__slide">
+                            <section class="card hangman">
+                                <div class="card-content">
+                                    <h3 class="card-title">Hangman</h3>
+                                    <p class="body">
+                                        Recreation of the popular game Hangman.
+                                    </p>
+                                    <footer class="buttons">
+                                        <a href="https://github.com/MajorNuke27/ahorcado" class="bt bt-resume">Github</a>
+                                        <a href="https://emontiel.dev/ahorcado" class="bt bt-resume">Demo</a>
+                                    </footer>
+                                </div>
+                            </section>
+                        </li>
+                        <li class="glide__slide">
+                            <section class="card encripter">
+                                <div class="card-content">
+                                    <h3 class="card-title">Encripter</h3>
+                                    <p class="body">
+                                        Encripter that uses predefined keys to cypher and decypher text.
+                                    </p>
+                                    <footer class="buttons">
+                                        <a href="https://github.com/MajorNuke27/encriptador" class="bt bt-resume">Github</a>
+                                        <a href="https://emontiel.dev/encriptador" class="bt bt-resume">Demo</a>
+                                    </footer>
+                                </div>
+                            </section>
+                        </li>
                     </ul>
                 </div>
                 <div class="glide__arrows" data-glide-el="controls">
@@ -86,15 +125,11 @@
     const options = {
         type: 'carousel',
         keyboard: true, 
-        perView: 3,
+        perView: 2,
         focusAt: 'center',
         gap: 30,
-        peek: 120,
+        peek: 0,
         breakpoints: {
-            1200: {
-                perView: 2,
-                peek: 0
-            },
             600: {
                 perView: 1,
                 peek: 70
