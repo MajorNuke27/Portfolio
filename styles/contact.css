@@ -1,0 +1,27 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+    min-height: 80vh;
+}
+.contact h2 {
+    text-align: center;
+}
+
+.contact p {
+    text-align: center;
+    line-height: 5.2rem;
+}
+
+.contact p a {
+    text-decoration-line: underline;
+    text-decoration-color: var(--aqua);
+}
+
+@media screen and (max-width: 800px) {
+    .contact p {
+        line-height: 3rem;
+    }
+}
